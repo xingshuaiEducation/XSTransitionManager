@@ -65,7 +65,7 @@
     return [[class alloc] init];
 }
 
-+(class)classWithName:(NSString *)class_name{
++(Class)classWithName:(NSString *)class_name{
     return NSClassFromString(class_name);
 }
 
