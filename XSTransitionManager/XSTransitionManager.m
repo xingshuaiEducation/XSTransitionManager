@@ -65,6 +65,10 @@
     return [[class alloc] init];
 }
 
++(class)classWithName:(NSString *)class_name{
+    return NSClassFromString(class_name);
+}
+
 +(void)pushToViewController:(NSString *)viewController_name params:(NSDictionary<NSString *,id> *)params from:(UIViewController *)viewController{
     Class class = NSClassFromString(viewController_name);
     UIViewController *vc = [[class alloc] init];

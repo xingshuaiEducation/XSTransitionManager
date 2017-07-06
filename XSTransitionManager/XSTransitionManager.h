@@ -42,6 +42,14 @@
 +(UIViewController *)viewControllerWithName:(NSString *)viewController_name;
 
 /**
+ 根据类名实例化一个类
+ 
+ @param class_name 类名
+ @return 类，没有则返回nil
+ */
++(class)classWithName:(NSString *)class_name;
+
+/**
   从视图控制器viewController跳转到实例化的对象
 
  @param viewController_name 实例化对象的名字
